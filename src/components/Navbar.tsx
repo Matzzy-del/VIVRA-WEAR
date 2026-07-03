@@ -1,7 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Menu, X, ShoppingBag } from "lucide-react";
-import logoImg from "../assets/images/logo.png";
 
 interface NavbarProps {
   onNavigate: (sectionId: string) => void;
@@ -60,10 +59,11 @@ export default function Navbar({ onNavigate, activeSection }: NavbarProps) {
             >
               {!logoFailed ? (
                 <img 
-                  src={logoImg} 
+                  src="https://i.imgur.com/oAXLhvK.png" 
                   alt="VIVRAWEAR Logo" 
                   className="h-16 md:h-20 w-auto object-contain"
                   onError={() => setLogoFailed(true)}
+                  referrerPolicy="no-referrer"
                 />
               ) : (
                 <span className="font-sans text-xl md:text-2xl font-bold tracking-tighter text-[#050505] flex items-center">
