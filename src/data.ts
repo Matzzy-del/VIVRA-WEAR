@@ -1,12 +1,17 @@
 import { Product, Benefit, TechFeature, Testimonial, FAQItem } from "./types";
+import yogaStudioBanner from "./assets/images/yoga_studio_banner_1783113236879.jpg";
+import vivraEmanaDetail from "./assets/images/vivra_emana_detail_1783087490386.jpg";
+import vivraLeggings from "./assets/images/vivra_leggings_1783087504688.jpg";
+import vivraTop from "./assets/images/vivra_top_1783087517124.jpg";
+import vivraJacket from "./assets/images/vivra_jacket_1783087529638.jpg";
 
 // Official Generated Asset Paths
 export const ASSETS = {
-  hero: "/src/assets/images/yoga_studio_banner_1783113236879.jpg",
-  emanaDetail: "/src/assets/images/vivra_emana_detail_1783087490386.jpg",
-  leggings: "/src/assets/images/vivra_leggings_1783087504688.jpg",
-  top: "/src/assets/images/vivra_top_1783087517124.jpg",
-  jacket: "/src/assets/images/vivra_jacket_1783087529638.jpg"
+  hero: yogaStudioBanner,
+  emanaDetail: vivraEmanaDetail,
+  leggings: vivraLeggings,
+  top: vivraTop,
+  jacket: vivraJacket
 };
 
 export const PRODUCTS: Product[] = [
