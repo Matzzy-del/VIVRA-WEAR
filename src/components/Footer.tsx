@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { ArrowUp } from "lucide-react";
+import logoImg from "../assets/images/logo.png";
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -27,11 +28,10 @@ export default function Footer({ onNavigate }: FooterProps) {
             <div className="flex items-center">
               {!logoFailed ? (
                 <img 
-                  src="https://i.imgur.com/oAXLhvK.png" 
+                  src={logoImg} 
                   alt="VIVRAWEAR Logo" 
                   className="h-20 md:h-24 w-auto object-contain self-start"
                   onError={() => setLogoFailed(true)}
-                  referrerPolicy="no-referrer"
                 />
               ) : (
                 <div className="font-sans text-2xl font-bold tracking-tighter">

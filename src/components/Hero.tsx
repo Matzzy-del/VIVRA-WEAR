@@ -1,6 +1,7 @@
 import { motion } from "motion/react";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { ASSETS } from "../data";
+import logoImg from "../assets/images/logo.png";
 
 interface HeroProps {
   onExplore: () => void;
@@ -102,10 +103,9 @@ export default function Hero({ onExplore }: HeroProps) {
       >
         <div className="relative">
           <img 
-            src="https://i.imgur.com/oAXLhvK.png" 
+            src={logoImg} 
             alt="Vivra Seal" 
             className="w-32 h-32 object-contain"
-            referrerPolicy="no-referrer"
           />
           <div className="absolute inset-0 rounded-full border border-[#0047AB]/20 animate-ping opacity-15 pointer-events-none" />
         </div>

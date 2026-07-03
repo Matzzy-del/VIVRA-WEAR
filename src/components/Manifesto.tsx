@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Compass, Shield, Heart } from "lucide-react";
+import logoImg from "../assets/images/logo.png";
 
 export default function Manifesto() {
   const containerVariants = {
@@ -34,10 +35,9 @@ export default function Manifesto() {
             <motion.div variants={itemVariants} className="flex lg:flex-col items-center lg:items-start gap-6">
               <div className="relative group">
                 <img 
-                  src="https://i.imgur.com/oAXLhvK.png" 
+                  src={logoImg} 
                   alt="Vivra Seal" 
                   className="w-32 h-32 object-contain transition-transform duration-500 hover:scale-105"
-                  referrerPolicy="no-referrer"
                 />
                 <div className="absolute inset-0 rounded-full border border-[#0047AB]/10 animate-ping opacity-20 pointer-events-none" />
               </div>

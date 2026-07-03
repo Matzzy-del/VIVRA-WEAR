@@ -2,6 +2,7 @@ import { useState, MouseEvent } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Cpu, ShieldCheck, Zap, Layers } from "lucide-react";
 import { ASSETS, TECH_FEATURES } from "../data";
+import logoImg from "../assets/images/logo.png";
 
 export default function TechEmana() {
   const [activeTab, setActiveTab] = useState(0);
@@ -100,10 +101,9 @@ export default function TechEmana() {
                 style={{ transform: "translateZ(40px)" }}
               >
                 <img 
-                  src="https://i.imgur.com/oAXLhvK.png" 
+                  src={logoImg} 
                   alt="Vivra Stamp" 
                   className="w-20 h-20 object-contain"
-                  referrerPolicy="no-referrer"
                 />
               </div>
 
