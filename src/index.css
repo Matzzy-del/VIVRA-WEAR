@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@200;300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-sans: "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-blue-accent: #0047AB;
+}
+
+@utility glass-panel {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+@utility glass-panel-dark {
+  backdrop-filter: blur(24px);
+  background: rgba(10, 10, 10, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.serif-display {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-style: italic;
+}
+
+.editorial-type {
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.blue-accent {
+  color: #0047AB;
+}
+
+.bg-blue-accent {
+  background-color: #0047AB;
+}
+
+.glass-nav {
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.75);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.vertical-label {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+}
+
+.image-placeholder {
+  background: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+}
